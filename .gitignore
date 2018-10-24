@@ -1,4 +1,5 @@
 *.o
+*.zip
 dump1090
 testfiles/*.bin
 misc
