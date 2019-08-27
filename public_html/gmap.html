@@ -17,8 +17,14 @@
         <title>DUMP1090</title>
 	</head>
 	<body onload="initialize()">
-		<div id="dialog-modal" title="Basic modal dialog" style="display:none;">
-			<p>The settings feature is coming soon. Keep checking GitHub.</p>
+		<div id="dialog-modal" title="Map Marker Information" style="display:none;">
+			<p>Map markers indicate the following distances from base station:</p>
+                        <ul>
+                        <li>1 Mile</li>
+                        <li>3 Miles</li>
+                        <li>5-60 Miles, increments of 5</li>
+                        <li>100 Miles</li>
+                        </ul>
 		</div>
 		<div id="map_container">
 			<div id="map_canvas"></div>
@@ -44,7 +50,7 @@
 						</td>
 						<td>&nbsp;</td>
 						<td width="150" style="text-align: center;" id="setings_button" class="pointer">
-						    [ <span onclick="optionsModal();">Settings</span> ]
+						    [ <span onclick="optionsModal();">Map Info</span> ]
 						</td>
 					</tr></table>
 				</div>
