@@ -18,9 +18,10 @@ CONST_ZOOMLVL   = 5;
 
 // -- Marker settings -------------------------------------
 // The default marker color
-MarkerColor	  = "rgb(127, 127, 127)";
+MarkerColor   = "rgb(127, 127, 127)";
 SelectedColor = "rgb(225, 225, 225)";
-StaleColor = "rgb(255, 100, 0)";
+StaleColor    = "rgb(255, 100, 0)";
+LowColor      = "rgb(186, 218, 85)";
 
 // -- Site Settings ---------------------------------------
 SiteShow    = true; // true or false

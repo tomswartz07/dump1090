@@ -59,6 +59,11 @@ var planeObject = {
 				this.markerColor = SelectedColor;
 			}
 
+                // If the plane is low to the ground, mark it as a different color
+                if (this.altitude < 10000 ) {
+                        this.markerColor = LowColor;
+                }
+
 			// If we have not seen a recent update, change color
 			if (this.seen > 15) {
 				this.markerColor = StaleColor;
