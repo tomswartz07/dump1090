@@ -195,7 +195,8 @@ function initialize() {
 
         // These will run after page is complitely loaded
         $(window).load(function() {
-                $('#dialog-modal').css('display', 'inline'); // Show hidden settings-windows content
+                // Show hidden modal box content
+                $('#dialog-modal').css('display', 'inline');
         });
 
         // Load up our options page
