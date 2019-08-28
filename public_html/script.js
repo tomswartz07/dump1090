@@ -271,8 +271,8 @@ function refreshSelected() {
         html += '&nbsp;<a href="http://www.flightstats.com/go/FlightStatus/flightStatusByFlight.do?';
         html += 'flightNumber='+selected.flight+'" target="_blank">[FlightStats]</a>';
         html += '&nbsp;<a href="http://flightaware.com/live/flight/'+selected.flight+'" target="_blank">[FlightAware]</a>';
+        html += '&nbsp;<a href="https://www.planespotters.net/hex/'+selected.icao.toUpperCase()+'" target="_blank">[PlaneSpotter]</a>';
     }
-    html += '&nbsp;<a href="https://www.planespotters.net/hex/'+selected.icao.toUpperCase()+'" target="_blank">[PlaneSpotter]</a>';
     html += '<td></tr>';
 
     if (selected) {
