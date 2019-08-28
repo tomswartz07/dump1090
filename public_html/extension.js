@@ -10,7 +10,7 @@
 // -----------------------------------------------------
 
 function extendedInitalize() {
-	// Write your initalization here
+	// Write your initialization here
 	// Gets called just before the 1-sec function call loop is setup
 }
 

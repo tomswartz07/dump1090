@@ -2,7 +2,7 @@ var listKMLType = ['Approch', 'Departure', 'Transit', 'Custom1', 'Custom2'];
 var listKMLs = localStorage['listKMLs'] || [];
 
 function optionsInitalize() {
-	// Write your initalization here
+	// Write your initialization here
 	// Gets called just before the 1-sec function call loop is setup
 	$( "#dialog-modal" ).dialog({
 		height: 340,

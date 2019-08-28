@@ -20,7 +20,7 @@ var planeObject = {
         messages	: null,
         seen		: null,
 
-        // Vaild...
+        // Valid...
         vPosition	: false,
         vTrack		: false,
 
@@ -225,7 +225,7 @@ var planeObject = {
                                 position: new google.maps.LatLng(this.latitude, this.longitude),
                                 map: GoogleMap,
                                 icon: this.funcGetIcon(),
-                                visable: true
+                                visible: true
                         });
 
                         // This is so we can match icao address

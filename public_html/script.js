@@ -55,7 +55,7 @@ function fetchData() {
         });
 }
 
-// Initalizes the map and starts up our timers to call various functions
+// Initializes the map and starts up our timers to call various functions
 function initialize() {
         // Make a list of all the available map IDs
         var mapTypeIds = [];
@@ -353,14 +353,14 @@ function refreshSelected() {
 }
 
 // Right now we have no means to validate the speed is good
-// Want to return (n/a) when we dont have it
+// Want to return (n/a) when we don't have it
 // TODO: Edit C code to add a valid speed flag
 // TODO: Edit js code to use said flag
 function normalizeSpeed(speed, valid) {
         return speed
 }
 
-// Returns back a long string, short string, and the track if we have a vaild track path
+// Returns back a long string, short string, and the track if we have a valid track path
 function normalizeTrack(track, valid){
         x = []
         if ((track > -1) && (track < 22.5)) {
@@ -396,7 +396,7 @@ function normalizeTrack(track, valid){
         return x
 }
 
-// Refeshes the larger table of all the planes
+// Refreshes the larger table of all the planes
 function refreshTableInfo() {
         var html = '<table id="tableinfo" width="100%">';
         html += '<thead style="background-color: #BBBBBB; cursor: pointer;">';
@@ -435,7 +435,7 @@ function refreshTableInfo() {
                         if (tableplane.squawk == 7600) {
                                 specialStyle += " squawk7600";
                         }
-                        // Emergancy
+                        // Emergency
                         if (tableplane.squawk == 7700) {
                                 specialStyle += " squawk7700";
                         }
@@ -559,7 +559,7 @@ function sortTable(szTableID,iCol) {
                 bNumeric = true;
         }
 
-        //loop through the rows, storing each one inro aStore
+        //loop through the rows, storing each one into aStore
         for (var i=0,iLen=oTbl.rows.length;i<iLen;i++){
                 var oRow=oTbl.rows[i];
                 vColData=bNumeric?parseFloat(oRow.cells[iSortCol].textContent||oRow.cells[iSortCol].innerText):String(oRow.cells[iSortCol].textContent||oRow.cells[iSortCol].innerText);
