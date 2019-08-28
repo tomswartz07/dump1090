@@ -33,3 +33,6 @@ SiteCircles = true; // true or false (Only shown if SiteShow is true)
 // In nautical miles or km (depending settings value 'Metric')
 SiteCirclesDistances = new Array(1,3,5,10,15,20,25,30,35,40,45,50,55,60,100);
 
+// The amount of time after the last message was seen before removing
+// the aircraft from the map. Unit in seconds
+LingerTime = 30000000000

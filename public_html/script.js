@@ -13,9 +13,11 @@ var bDefaultSortASC=true;
 var iDefaultSortCol=3;
 
 // Get current map settings
-CenterLat = Number(localStorage['CenterLat']) || CONST_CENTERLAT;
-CenterLon = Number(localStorage['CenterLon']) || CONST_CENTERLON;
-ZoomLvl   = Number(localStorage['ZoomLvl']) || CONST_ZOOMLVL;
+CenterLat  = Number(localStorage['CenterLat']) || CONST_CENTERLAT;
+CenterLon  = Number(localStorage['CenterLon']) || CONST_CENTERLON;
+ZoomLvl    = Number(localStorage['ZoomLvl']) || CONST_ZOOMLVL;
+LingerTime = Number(localStorage['LingerTime']) || LingerTime;
+
 
 function fetchData() {
     $.getJSON('/dump1090/data.json', function(data) {
@@ -224,7 +226,7 @@ function reaper() {
             // Has it not been seen for 5 minutes?
             // This way we still have it if it returns before then
             // Due to loss of signal or other reasons
-            if ((reaptime - Planes[reap].updated) > 300000) {
+            if ((reaptime - Planes[reap].updated) > LingerTime ) {
                 // Reap it.
                 delete Planes[reap];
             }

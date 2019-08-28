@@ -65,7 +65,7 @@ var planeObject = {
                 }
 
 			// If we have not seen a recent update, change color
-			if (this.seen > 15) {
+                if (this.seen > 60) {
 				this.markerColor = StaleColor;
 			}
 			
@@ -154,9 +154,9 @@ var planeObject = {
 			this.messages	= data.messages;
 			this.seen	= data.seen;
 
-			// If no packet in over 58 seconds, consider the plane reapable
+                // If no packet in over the configured linger time, consider the plane reapable
 			// This way we can hold it, but not show it just in case the plane comes back
-			if (this.seen > 58) {
+                if (this.seen > LingerTime ) {
 				this.reapable = true;
 				if (this.marker) {
 					this.marker.setMap(null);
