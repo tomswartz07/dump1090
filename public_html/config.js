@@ -26,8 +26,8 @@ LowColor      = "rgb(186, 218, 85)";
 // -- Site Settings ---------------------------------------
 SiteShow    = false; // true or false
 // The Latitude and Longitude in decimal format
-SiteLat     = 40.10;
-SiteLon     = -76.28;
+SiteLat     = 40.0;
+SiteLon     = -76.2;
 
 SiteCircles = true; // true or false (Only shown if SiteShow is true)
 // In nautical miles or km (depending settings value 'Metric')
