@@ -24,7 +24,7 @@ StaleColor    = "rgb(255, 100, 0)";
 LowColor      = "rgb(186, 218, 85)";
 
 // -- Site Settings ---------------------------------------
-SiteShow    = true; // true or false
+SiteShow    = false; // true or false
 // The Latitude and Longitude in decimal format
 SiteLat     = 40.10;
 SiteLon     = -76.28;
