@@ -245,6 +245,7 @@ function refreshSelected() {
 
         var columns = 2;
         var html = '';
+        var currentlyDisplayed = Object.keys(Planes).length
 
         if (selected) {
                 html += '<table id="selectedinfo" width="100%">';
@@ -253,6 +254,7 @@ function refreshSelected() {
         }
 
         // Flight header line including squawk if needed
+        html += '<tr><td colspan="' + columns + '" id="selectedinfotitle">Currently tracking ' + currentlyDisplayed + ' aircraft';
         if (selected && selected.flight == "") {
                 html += '<tr><td colspan="' + columns + '" id="selectedinfotitle"><b>N/A (' +
                         selected.icao + ')</b>';
