@@ -1,0 +1,12 @@
+[Unit]
+Description=Dump1090 Web Monitor Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/dump1090 --aggressive --modeac --net --fix --enable-agc --interactive --fix --phase-enhance --interactive-ttl 6000 --quiet
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
